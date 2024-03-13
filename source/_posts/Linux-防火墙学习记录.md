@@ -6,11 +6,13 @@ tags:
   - 防火墙
 ---
 
+## iptables
+
 iptables 命令参数
 
 ![Iptables参数](https://img.katr.top/2024/03/abba339ea8b6f7be46add643ae8cf87e.png)
 
-iptables 上面规则的优先级最高，所以可以使用 -I 参数加在头部。
+iptables 是从上到下匹配规则的链表，上面规则的优先级最高，所以可以使用 -I 参数加在头部。
 
 也可以使用 -A 参数添加一个在尾部兜底的规则。
 
@@ -33,3 +35,7 @@ iptables -D INPUT 1
 # 永久保存当前的iptables规则
 iptables-save
 ```
+
+## firewalld
+
+![firewalld](https://img.katr.top/2024/03/597963e2c54b9776d5bc336457263c5e.png)
